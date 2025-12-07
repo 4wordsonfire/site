@@ -254,7 +254,7 @@ a:hover {
   aspect-ratio: 4 / 5;
   border-radius: var(--radius);
   background: linear-gradient(160deg, rgba(5, 8, 22, 0.6), rgba(26, 16, 36, 0.8)),
-    url('images/key-art.jpg') center/cover;
+    url('img/hero.jpeg') center/cover;
   box-shadow: var(--shadow), 0 0 30px rgba(255, 204, 92, 0.28);
   border: 1px solid rgba(255, 220, 122, 0.18);
   position: relative;
@@ -448,7 +448,7 @@ h2 {
 .card__image,
 .visual-block {
   background: linear-gradient(145deg, rgba(255, 220, 122, 0.08), rgba(5, 8, 22, 0.9)),
-    url('images/dandelions.jpg') center/cover;
+    url('img/screen1.jpeg') center/cover;
   border-radius: var(--radius);
   min-height: 240px;
   border: 1px solid rgba(255, 220, 122, 0.14);
@@ -457,7 +457,7 @@ h2 {
 
 .visual-block--photo {
   background: linear-gradient(160deg, rgba(5, 8, 22, 0.7), rgba(24, 27, 34, 0.65)),
-    url('images/winter-couple.jpg') center/cover;
+    url('img/two.jpeg') center/cover;
 }
 
 .card__body {
@@ -487,6 +487,37 @@ h2 {
   font-size: 16px;
   top: 0;
   transform: translateY(2px);
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.media-card {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  background: var(--deep-asphalt);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 220, 122, 0.14);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.35);
+}
+
+.media-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: inset 0 0 0 1px rgba(255, 220, 122, 0.08);
+}
+
+.media-card figcaption {
+  color: var(--warm-ivory-2);
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .support-grid {
@@ -688,7 +719,7 @@ h2 {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   background: linear-gradient(180deg, rgba(255, 220, 122, 0.12), rgba(5, 8, 22, 0.7)),
-    url('images/author-avatar.jpg') center/cover;
+    url('img/photo_2025-12-08%2002.27.33.jpeg') center/cover;
   border: 2px solid rgba(255, 220, 122, 0.25);
   box-shadow: 0 18px 36px rgba(0, 0, 0, 0.45), 0 0 24px rgba(255, 204, 92, 0.2);
 }
